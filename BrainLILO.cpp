@@ -15,7 +15,7 @@ static void initialize()
     g_initialized = true;
 }
 
-static void getThisDllDirectoryPath(LPWSTR buffer)
+BRAINLILO_API void getThisDllDirectoryPath(LPWSTR buffer)
 {
     // retrive the path of the application.
     GetModuleFileName(g_hInstance, buffer, 512);
